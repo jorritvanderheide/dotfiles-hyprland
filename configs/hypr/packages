@@ -1,0 +1,31 @@
+# Setup
+nano
+git
+
+# Main
+kitty
+waybar
+wofi OR rofi-lbonn-wayland-git
+pcmanfm-qt6-git OR thunar
+swaylock-effects
+brightnessctl
+swayidle
+polkit-kde-agent
+
+# Utility
+ungoogled-chromium OR chromium
+nwg-displays
+cliphist
+wl-clipboard
+
+# Media
+pamixer
+playerctl
+
+# Theming
+ttf-maple
+
+# TODO
+- Notifications
+- Wallpapers
+- Icon & non-monospace font
