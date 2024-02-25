@@ -25,11 +25,12 @@ swww
 swaylock-effects-git
 swayidle
 wlogout
+fprint
+
+# Utility
 
 ## Screenshot
 grimblast-git
-
-# Utility
 
 ## Network
 networkmanager
