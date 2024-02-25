@@ -1,0 +1,108 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "mod": "dock",
+    "height": 35,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+	"modules-left": ["custom/padd","custom/l_end","custom/power","custom/r_end","custom/padd"],
+	"modules-right": ["custom/padd","custom/l_end","tray","custom/r_end","custom/l_end","custom/spotify","pulseaudio","battery","clock","custom/r_end","custom/padd"],
+
+    "custom/power": {
+        "format": "",
+        "on-click": "~/.config/hypr/scripts/logout.sh",
+        "tooltip": false
+    },
+
+    "tray": {
+        "icon-size": 16,
+        "spacing": 5
+    },
+
+    "custom/spotify": {
+        "exec": "/usr/bin/python3 /home/jorrit/.config/waybar/scripts/mediaplayer.py --player spotify",
+        "format": " {}",
+        "return-type": "json",
+        "on-click": "playerctl play-pause --player spotify",
+        "max-length": 25,
+        "escape": true,
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}",
+        "format-muted": "婢",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", "", ""]
+        },
+        "tooltip": false
+    },
+
+    "battery": {
+        "states": {
+            "good": 80,
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "tooltip": false
+    },
+
+    "clock": {
+        "format": " {:%H:%M}",
+        "format-alt": "{:%R 󰃭 %d-%m-%y}",
+        "tooltip": false
+    },
+
+
+    // Padding //
+
+    "custom/l_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/r_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/sr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rl_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/rr_end": {
+        "format": " ",
+        "interval" : "once",
+        "tooltip": false
+    },
+
+    "custom/padd": {
+        "format": "  ",
+        "interval" : "once",
+        "tooltip": false
+    }
+
+}
+
