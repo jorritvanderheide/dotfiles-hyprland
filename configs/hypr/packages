@@ -2,30 +2,74 @@
 nano
 git
 
-# Main
-kitty
-waybar
-wofi OR rofi-lbonn-wayland-git
-pcmanfm-qt6-git OR thunar
-swaylock-effects
-brightnessctl
-swayidle
+# Dependencies
 polkit-kde-agent
+qt5-wayland
+qt6-wayland
+brightnessctl
+pavucontrol
+pamixer
+
+# Hyprland
+hyprland-git
+waybar-hyprland-git
+rofi-lbonn-wayland-git
+
+## Notifications
+dunst
+
+## Wallpaper
+swww
+
+## Lock screen & logout
+swaylock-effects-git
+swayidle
+wlogout
+
+## Screenshot
+grimblast-git
 
 # Utility
-ungoogled-chromium OR chromium
-nwg-displays
+
+## Network
+networkmanager
+network-manager-applet
+
+## Bluetooth
+bluez
+bluez-utils
+blueman
+
+## Clipboard
 cliphist
 wl-clipboard
 
-# Media
-pamixer
+## Display
+nwg-displays
+darkman (auto dark mode)
+wlsunset (auto gamma)
+wluma (auto brightness)
+
+## Media
 playerctl
 
 # Theming
+nwg-look
+kvantum
+qt5ct
+qt6ct
+
+## Fonts
 ttf-maple
+
+# Apps
+kitty
+ungoogled-chromium
+pcmanfm-qt6-git OR thunar
+visual-studio-code-bin
 
 # TODO
 - Notifications
 - Wallpapers
 - Icon & non-monospace font
+- Fix rofi + cliboard
