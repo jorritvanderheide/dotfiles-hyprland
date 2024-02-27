@@ -1,0 +1,7 @@
+# Ignore non-theme related directories
+/chromium
+/Code - OSS
+/dconf
+/gtk-3.0
+/nwg-displays
+/pulse

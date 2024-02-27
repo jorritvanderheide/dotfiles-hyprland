@@ -7,7 +7,7 @@
     "passthrough": false,
     "gtk-layer-shell": true,
 	"modules-left": ["custom/padd","custom/l_end","custom/power","custom/r_end","custom/padd"],
-	"modules-right": ["custom/padd","custom/l_end","tray","custom/r_end","custom/l_end","custom/spotify","pulseaudio","battery","clock","custom/r_end","custom/padd"],
+	"modules-right": ["custom/padd","custom/l_end","tray","custom/r_end","custom/l_end","custom/spotify","pulseaudio","clock","custom/r_end","custom/padd"],
 
     "custom/power": {
         "format": "",
@@ -37,19 +37,6 @@
             "headphone": "",
             "default": ["", "", ""]
         },
-        "tooltip": false
-    },
-
-    "battery": {
-        "states": {
-            "good": 80,
-            "warning": 20,
-            "critical": 10
-        },
-        "format": "{icon} {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
         "tooltip": false
     },
 
